@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via Verde Bike</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Via Verde Bike</h1>
+    
+    <section id = "hero-section">
+
+    <img src = "via verde.jpg" alt = "Parque via verde">
+
+    <form>
+        <label>Distância</label>
+        <input type="text" id = "distancia" name = "distancia" placeholder = "Distância (km)" required>
+
+        <label>Velocidade</label>
+        <input type="text" id = "velocidade" name = "velocidade" placeholder = "Velocidade (km/h)" required>
+
+        <button type = "button" onclick="calculaTempoPercurso(); calculaVelocidadeMedia(); calculaConversaoKm();">Calcular</button>
+
+        <section id = "result-section">
+            <section>
+                <label>Tempo de percurso:</label>
+                <p class = "section-p" id = "tempo-percurso"></p>
+            </section>
+
+            <section>
+                <label>Velocidade média:</label>
+                <p class = "section-p" id = "velocidade-media"></p>
+            </section>
+
+            <section id = "last-section">
+                <label>Conversão de km:</label>
+                <p class = "section-p" id = "conversao-km"></p>
+            </section>
+        </section>
+    </form>
+        
+    </section>   
+
+
+    <script src="app.js"></script>
+</body>
+</html>

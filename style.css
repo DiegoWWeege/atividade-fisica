@@ -1,0 +1,90 @@
+*{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body{
+    background-color: green;
+}
+
+h1{
+    justify-self: center;
+    color: white;
+}
+
+#hero-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1090px;
+    justify-self: center;
+    margin-top: 5vh;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color:white;
+    border-radius: 8px;
+    align-items: center;
+}
+
+section img{
+    border-radius: 8px;
+    object-fit: cover;
+    justify-self: center;
+}
+
+section form label{
+    display:block;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5px;
+    color: darkgreen;
+}
+
+section form input{
+    width: 100%;
+    box-sizing: border-box;
+    padding:10px;
+    border-radius: 4px;
+    border-style: none;
+    border: 1px solid darkgreen;
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+section form button{
+    width: 100%;
+    box-sizing: border-box;
+    padding:10px;
+    border-radius: 4px;
+    border-style: none;
+    background-color: darkgreen;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+
+section form #result-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+}
+
+section form section label{
+    display: block;
+}
+
+section form section .section-p{
+    background-color: green;
+    color: white;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+section form section #last-section{
+    grid-column: -1/1;
+}
