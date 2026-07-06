@@ -2,21 +2,21 @@ function calculaTempoPercurso(){
     let distancia = document.getElementById("distancia").value;
     let velocidade = document.getElementById("velocidade").value;
     let tempo = distancia / velocidade;
-    document.getElementById("tempo-percurso").innerHTML = "O tempo de percurso é: " + tempo + " horas.";
+    document.getElementById("tempo-percurso").innerHTML =  tempo + " horas";
 }
 
-function calculaVelocidadeMedia(){
+function calculaQuantVezes(){
+    let distancia = document.getElementById("distancia").value;
+    let tempo = distancia / 2;
+    document.getElementById("quant-vezes").innerHTML = tempo + " vezes";
+}
+
+function calculaQuantCalorias(){
     let distancia = document.getElementById("distancia").value;
     let velocidade = document.getElementById("velocidade").value;
     let tempo = distancia / velocidade;
-    document.getElementById("velocidade-media").innerHTML = "O tempo de percurso é: " + tempo + " horas.";
-}
-
-function calculaConversaoKm(){
-    let distancia = document.getElementById("distancia").value;
-    let velocidade = document.getElementById("velocidade").value;
-    let tempo = distancia / velocidade;
-    document.getElementById("conversao-km").innerHTML = "A quantidade: " + tempo + " horas.";
+    let caloriasGastas = tempo * 300;
+    document.getElementById("quant-calorias").innerHTML = caloriasGastas + " Calorias";
 }
 
 

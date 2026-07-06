@@ -20,7 +20,7 @@
         <label>Velocidade</label>
         <input type="text" id = "velocidade" name = "velocidade" placeholder = "Velocidade (km/h)" required>
 
-        <button type = "button" onclick="calculaTempoPercurso(); calculaVelocidadeMedia(); calculaConversaoKm();">Calcular</button>
+        <button type = "button" onclick="calculaTempoPercurso(); calculaQuantVezes(); calculaQuantCalorias();">Calcular</button>
 
         <section id = "result-section">
             <section>
@@ -29,13 +29,13 @@
             </section>
 
             <section>
-                <label>Velocidade média:</label>
-                <p class = "section-p" id = "velocidade-media"></p>
+                <label>Você percorreu a via verde: </label>
+                <p class = "section-p" id = "quant-vezes"></p>
             </section>
 
             <section id = "last-section">
-                <label>Conversão de km:</label>
-                <p class = "section-p" id = "conversao-km"></p>
+                <label>Média de calorias gastas:</label>
+                <p class = "section-p" id = "quant-calorias"></p>
             </section>
         </section>
     </form>
