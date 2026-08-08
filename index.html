@@ -1,48 +1,47 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Via Verde Bike</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Via Verde</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Via Verde Bike</h1>
-    
-    <section id = "hero-section">
+<header><h1>🌿 Via Verde</h1><p>Calculadora de atividade física</p></header>
 
-    <img src = "via verde.jpg" alt = "Parque via verde">
+<main>
+<section class="card">
+<img src="via verde.jpg" alt="Via Verde">
+<div class="form">
+<h2>Calcule seu desempenho</h2>
+<p>Informe a distância e o tempo da atividade.</p>
 
-    <form>
-        <label>Distância</label>
-        <input type="text" id = "distancia" name = "distancia" placeholder = "Distância (km)" required>
+<label>Distância</label>
 
-        <label>Velocidade</label>
-        <input type="text" id = "velocidade" name = "velocidade" placeholder = "Velocidade (km/h)" required>
+<div class="input"><input id="distancia" type="number" placeholder="Ex: 5"><span>km</span></div>
 
-        <button type = "button" onclick="calculaTempoPercurso(); calculaQuantVezes(); calculaQuantCalorias();">Calcular</button>
+<label>Tempo</label>
 
-        <section id = "result-section">
-            <section>
-                <label>Tempo de percurso:</label>
-                <p class = "section-p" id = "tempo-percurso"></p>
-            </section>
+<div class="input"><input id="tempo" type="number" placeholder="Ex: 30"><span>min</span></div>
 
-            <section>
-                <label>Você percorreu a via verde: </label>
-                <p class = "section-p" id = "quant-vezes"></p>
-            </section>
+<button onclick="calcular()">Calcular</button>
 
-            <section id = "last-section">
-                <label>Média de calorias gastas:</label>
-                <p class = "section-p" id = "quant-calorias"></p>
-            </section>
-        </section>
-    </form>
-        
-    </section>   
+</div>
+</section>
 
+<section class="resultados">
+<h2>Seus resultados</h2>
+<div class="grid">
+<div><b>⚡</b><span>Velocidade</span><strong id="velocidade">--</strong><small>km/h</small></div>
+<div><b>⏱️</b><span>Tempo</span><strong id="resultadoTempo">--</strong><small>min</small></div>
+<div><b>📏</b><span>Distância</span><strong id="resultadoDistancia">--</strong><small>m</small></div>
+<div><b>🏃</b><span>Ritmo</span><strong id="ritmo">--</strong><small>min/km</small></div>
+</div>
+</section>
+</main>
 
-    <script src="app.js"></script>
+<footer>Via Verde • Jaraguá do Sul 🌿</footer>
+<script src="app.js"></script>
 </body>
 </html>
