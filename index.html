@@ -1,47 +1,128 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Via Verde</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via Verde</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header><h1>🌿 Via Verde</h1><p>Calculadora de atividade física</p></header>
 
-<main>
-<section class="card">
-<img src="via verde.jpg" alt="Via Verde">
-<div class="form">
-<h2>Calcule seu desempenho</h2>
-<p>Informe a distância e o tempo da atividade.</p>
+    <header>
+        <h1>Via Verde</h1>
+        <p>Calculadora de atividade física</p>
+    </header>
 
-<label>Distância</label>
+    <main>
 
-<div class="input"><input id="distancia" type="number" placeholder="Ex: 5"><span>km</span></div>
+        <section class="card">
 
-<label>Tempo</label>
+            <img src="via verde.png" alt="Via Verde">
 
-<div class="input"><input id="tempo" type="number" placeholder="Ex: 30"><span>min</span></div>
+            <div class="form">
 
-<button onclick="calcular()">Calcular</button>
+                <h2>Calcule seu desempenho</h2>
+                <p>Informe a distância e o tempo da atividade.</p>
 
-</div>
-</section>
+                <label>Distância</label>
 
-<section class="resultados">
-<h2>Seus resultados</h2>
-<div class="grid">
-<div><b>⚡</b><span>Velocidade</span><strong id="velocidade">--</strong><small>km/h</small></div>
-<div><b>⏱️</b><span>Tempo</span><strong id="resultadoTempo">--</strong><small>min</small></div>
-<div><b>📏</b><span>Distância</span><strong id="resultadoDistancia">--</strong><small>m</small></div>
-<div><b>🏃</b><span>Ritmo</span><strong id="ritmo">--</strong><small>min/km</small></div>
-</div>
-</section>
-</main>
+                <div class="input">
+                    <input id="distancia" type="number" placeholder="Ex: 5">
+                    <span>km</span>
+                </div>
 
-<footer>Via Verde • Jaraguá do Sul 🌿</footer>
-<script src="app.js"></script>
+                <label>Tempo</label>
+
+                <div class="input">
+                    <input id="tempo" type="number" placeholder="Ex: 30">
+                    <span>min</span>
+                </div>
+
+                <button onclick="calcular()">Calcular</button>
+
+            </div>
+
+        </section>
+
+        <section class="clima">
+
+            <h2>Clima em Jaraguá do Sul</h2>
+
+            <div class="clima-info">
+                <div>
+                    <span>Temperatura</span>
+                    <strong id="temperatura">--</strong>
+                    <small>°C</small>
+                </div>
+
+                <div>
+                    <span>Umidade</span>
+                    <strong id="umidade">--</strong>
+                    <small>%</small>
+                </div>
+
+                <div>
+                    <span>Vento</span>
+                    <strong id="vento">--</strong>
+                    <small>km/h</small>
+                </div>
+
+                <div>
+                    <span>Condição</span>
+                    <strong id="condicao">--</strong>
+                </div>
+            </div>
+
+            <div id="recomendacao" class="recomendacao">
+                Verificando condições...
+            </div>
+
+        </section>
+
+        <section class="resultados">
+
+            <h2>Seus resultados</h2>
+
+            <div class="grid">
+
+                <div>
+                    <span>Velocidade</span>
+                    <strong id="velocidade">--</strong>
+                    <small>km/h</small>
+                </div>
+
+                <div>
+                    <span>Tempo</span>
+                    <strong id="resultadoTempo">--</strong>
+                    <small>min</small>
+                </div>
+
+                <div>
+                    <span>Distância</span>
+                    <strong id="resultadoDistancia">--</strong>
+                    <small>m</small>
+                </div>
+
+                <div>
+                    <span>Ritmo</span>
+                    <strong id="ritmo">--</strong>
+                    <small>min/km</small>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Via Verde • Jaraguá do Sul
+    </footer>
+
+    <script src="app.js"></script>
+
 </body>
+
 </html>
