@@ -1,17 +1,19 @@
 function calcular() {
     let distancia = Number(document.getElementById("distancia").value);
     let tempo = Number(document.getElementById("tempo").value);
+    let peso = Number(document.getElementById("peso").value);
 
-    if (distancia <= 0 || tempo <= 0) {
+    if (distancia <= 0 || tempo <= 0 || peso <= 0) {
         alert("Informe valores válidos.");
         return;
     }
 
     let velocidade = distancia / (tempo / 60);
     let ritmo = tempo / distancia;
+    let calorias = peso * distancia * 1.036;
 
     document.getElementById("velocidade").textContent = velocidade.toFixed(2);
-    document.getElementById("resultadoTempo").textContent = tempo;
+    document.getElementById("calorias").textContent = calorias.toFixed(0);
     document.getElementById("resultadoDistancia").textContent = distancia * 1000;
     document.getElementById("ritmo").textContent = ritmo.toFixed(2);
 }
